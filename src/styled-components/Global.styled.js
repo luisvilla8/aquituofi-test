@@ -6,4 +6,10 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
   }
+  html.light {
+    --bgColor: #EEEEEE;
+  }
+  html.dark {
+    --bgColor: #060606;
+  }
 `
