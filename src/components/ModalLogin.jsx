@@ -6,19 +6,19 @@ import {
   Title,
 } from "../styled-components";
 import { RiCloseFill } from "react-icons/ri";
-import { Modal, Input, Button } from "."
+import { Modal, Input } from "."
+import { useDispatch } from "react-redux";
+import { closeModal } from "../redux/states";
 
-export const ModalLogin = () => {
+export const ModalLogin = ({ isOpen }) => {
 
-  const esTemporal = () => {
-    console.log("cambia esta función")
-  }
-  
+  const dispatch = useDispatch()
+
   return (
-    <Modal>
+    <Modal isOpen={isOpen}>
       <ModalHeader>
         <Title>Bienvenido a Aquituofi!</Title>
-        <CloseButton onClick={() => console.log("cerrar modal")}>
+        <CloseButton onClick={() => dispatch(closeModal())}>
           <RiCloseFill />
         </CloseButton>
       </ModalHeader>
@@ -28,7 +28,7 @@ export const ModalLogin = () => {
       <Input id="contraseña" type="password" inputType="modal">
         Contraseña
       </Input>
-      <ModalButton onClick={esTemporal} color="acept">
+      <ModalButton onClick={() => dispatch(closeModal())} color="acept">
         Iniciar Sesión
       </ModalButton>
     </Modal>
