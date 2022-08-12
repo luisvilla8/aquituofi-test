@@ -27,4 +27,8 @@ export const GlobalStyle = createGlobalStyle`
     --textColor: #E8E8E8;
     --green: #09240C;
   }
+  html,
+  body {
+    background-color: var(--bgColor);
+  }
 `

@@ -1,7 +1,7 @@
 import React from 'react'
-import { Input } from '../../components';
+import { Button, Input } from '../../components';
 import { Cover } from "../components";
-import { Content } from "../styled-components";
+import { Content, CoverButton, CoverInputGroup } from "../styled-components";
 
 export const Home = () => {
   return (
@@ -10,8 +10,10 @@ export const Home = () => {
         <h1>ENCUENTRA TU ESPACIO</h1>
         <h3>rápido, simple y seguro</h3>
       </Content>
-      <Input />
-      
+      <CoverInputGroup>
+        <Input />
+        <CoverButton>BUSCAR</CoverButton>
+      </CoverInputGroup>
     </Cover>
   );
 };
