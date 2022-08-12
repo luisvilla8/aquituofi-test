@@ -9,6 +9,6 @@ export const ButtonStyled = styled.button`
   color: var(--textColor);
   transition: color var(--transition);
   @media (min-width: 720px) {
-    display: ${ prop => prop.isMenu ? 'none' : 'inline'};
+    display: ${ prop => prop.type === "menu" ? 'none' : 'inline'};
   }
 `

@@ -23,7 +23,7 @@ export const Navbar = ({ logo, children }) => {
         </Button>
         <Button 
           handleClick={() => dispatch(toggleIsOpen())}
-          isMenu={true}
+          type="menu"
         >
           <BiMenu size="2rem" />
         </Button>

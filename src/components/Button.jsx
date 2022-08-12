@@ -1,8 +1,8 @@
 import { ButtonStyled } from "../styled-components"
 
-export const Button = ({ children, handleClick, isMenu }) => {
+export const Button = ({ children, handleClick, type }) => {
   return (
-    <ButtonStyled onClick={ handleClick } isMenu={isMenu}>
+    <ButtonStyled onClick={ handleClick } type={type}>
       { children }
     </ButtonStyled>
   )

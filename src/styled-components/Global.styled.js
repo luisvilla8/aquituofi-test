@@ -19,6 +19,7 @@ export const GlobalStyle = createGlobalStyle`
   html.light {
     --green: #D5F0D8;
     --bgColor: #FCFCFC;
+    --bgInput: #D9D9D9;
     --textColor: #1E1E1E;
     --transition: .3s ease;
   }
