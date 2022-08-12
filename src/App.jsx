@@ -4,8 +4,8 @@ import { Navbar, Logo } from "./components";
 import { useSelector } from "react-redux";
 
 function App() {
-  const theme = useSelector((state) => state.theme);
-  document.documentElement.classList.add(theme)
+  const theme = useSelector((state) => state.theme.value);
+  document.documentElement.classList = theme
 
   return (
     <BrowserRouter>

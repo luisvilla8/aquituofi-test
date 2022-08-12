@@ -1,13 +1,8 @@
 import { ButtonStyled } from "../styled-components"
-import { useDispatch } from "react-redux"
-import { toggleTheme } from "../redux/states/themeSlice"
 
-export const Button = ({ children }) => {
-
-  const dispatch = useDispatch()
-
+export const Button = ({ children, handleClick, isMenu }) => {
   return (
-    <ButtonStyled onClick={ () => dispatch(toggleTheme())}>
+    <ButtonStyled onClick={ handleClick } isMenu={isMenu}>
       { children }
     </ButtonStyled>
   )

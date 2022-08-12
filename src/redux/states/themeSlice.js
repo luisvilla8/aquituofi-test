@@ -1,23 +1,25 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-const initialState = "light";
+const initialState = {
+  value: "light"
+}
 
 export const themeSlice = createSlice({
   name: "theme",
   initialState,
   reducers: {
     toggleTheme: (state) => {
-      if (state === "dark") state = "light"
-      else state = "dark"
+      if (state.value === "dark") state.value = "light"
+      else state.value = "dark"
     },
-    themeToDark: (state) => {
-      state = "dark"
+    themeToDark: () => {
+      state.value = "dark"
     },
-    themeToLight: (state) => {
-      state = "light"
+    themeToLight: () => {
+      state.value = "light"
     }
   }
 })
 
 export const { toggleTheme, themeToDark, themeToLight } = themeSlice.actions;
-export default themeSlice.reducer;
+export const themeReducer = themeSlice.reducer;

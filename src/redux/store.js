@@ -1,8 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-import themeReducer from "./states/themeSlice";
+import { menuReducer, themeReducer } from "./states";
 
 export const store = configureStore({
   reducer: {
     theme: themeReducer,
+    menu: menuReducer,
   }
 })
