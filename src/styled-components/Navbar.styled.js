@@ -32,6 +32,7 @@ export const NavMenu = styled.div`
   display: ${ prop => prop.isOpen ? "flex" : "none"};
   flex-direction: column;
   position: absolute;
+  z-index: 2;
   right: 2rem;
   top: 4rem;
   padding: 1rem .5rem;

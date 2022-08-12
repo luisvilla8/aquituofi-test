@@ -13,6 +13,8 @@ export const GlobalStyle = createGlobalStyle`
   }
   :root {
     --fontFamily: 'Raleway', sans-serif;
+    --titleColor: #FCFCFC;
+    --shadowGreen: #2FB43C;
   }
   html.light {
     --green: #D5F0D8;
