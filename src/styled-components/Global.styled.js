@@ -25,6 +25,7 @@ export const GlobalStyle = createGlobalStyle`
   }
   html.dark {
     --bgColor: #060606;
+    --bgInput: #2c2c2c;
     --textColor: #E8E8E8;
     --green: #09240C;
   }

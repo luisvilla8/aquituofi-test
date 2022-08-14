@@ -34,7 +34,7 @@ export const ModalHeader = styled.div`
 `
 
 export const Title = styled.h2`
-  color: var(--titleModalColor);
+  color: var(--textColor);
   font-weight: 800;
   width: fit-content;
 `
@@ -58,7 +58,7 @@ export const CloseButton = styled.button`
   padding: .2rem;
   border: none;
   border-radius: .5rem;
-  color: var(--titleModalColor);
+  color: var(--textColor);
   text-align: center;
   &:hover {
     transform: scale(1.1);
