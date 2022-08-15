@@ -10,15 +10,6 @@ export const CoverStyled = styled.picture`
     object-fit: cover;
     margin: 0 auto;
   }
-  &::after {
-    display: block;
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(#000, transparent);
-    opacity: 0.5;
-    position: absolute;
-  }
 `;
 export const CoverInputGroup = styled.div`
   position: absolute;

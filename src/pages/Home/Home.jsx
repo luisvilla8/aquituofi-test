@@ -1,7 +1,7 @@
 import React from 'react'
-import { Button, Input } from '../../components';
-import { Cover } from "../components";
-import { Content, CoverButton, CoverInputGroup } from "../styled-components";
+import { Input } from '../../components';
+import { Cover } from "./components";
+import { Content, CoverButton, CoverInputGroup } from "./styled-components";
 
 export const Home = () => {
   return (

@@ -7,11 +7,16 @@ export const FooterStyled = styled.footer`
   flex-wrap: wrap;
   column-gap: 2rem;
   margin-top: 20rem;
+  h2 {
+    color: var(--textColor);
+  }
   p {
     font-style: italic;
+    color: var(--textColor);
   }
   @media (min-width: 768px) {
     padding: var(--paddingYMD) var(--paddingXMD);
+    column-gap: 4rem;
   }
 `;
 
@@ -22,7 +27,7 @@ export const LinkGroup = styled.ul`
   }
   @media (min-width: 768px) {
     &:nth-child(1) {
-      margin-right: 4rem;
+      margin-right: 8rem;
     }
   }
 `;
