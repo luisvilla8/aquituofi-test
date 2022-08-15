@@ -7,14 +7,26 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     font-family: var(--fontFamily);
   }
+  html,
+  body {
+    background-color: var(--bgColor);
+  }
   a {
     text-decoration: none;
     color: var(--textColor);
+  }
+  ul,
+  li {
+    list-style: none;
   }
   :root {
     --fontFamily: 'Raleway', sans-serif;
     --titleColor: #FCFCFC;
     --shadowGreen: #2FB43C;
+    --paddingY: 1rem;
+    --paddingX: 2rem;
+    --paddingXMD: 4rem;
+    --paddingYMD: 1.5rem;
   }
   html.light {
     --green: #D5F0D8;
@@ -29,8 +41,4 @@ export const GlobalStyle = createGlobalStyle`
     --textColor: #E8E8E8;
     --green: #09240C;
   }
-  html,
-  body {
-    background-color: var(--bgColor);
-  }
-`
+`;

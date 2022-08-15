@@ -1,4 +1,5 @@
 export * from './Button.styled';
+export * from './Footer.styled';
 export * from './Global.styled';
 export * from './Input.styled';
 export * from './Modal.styled';

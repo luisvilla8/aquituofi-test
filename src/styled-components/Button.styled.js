@@ -22,6 +22,6 @@ export const ButtonWhatsapp = styled(ButtonStyled)`
   place-items: center;
   font-size: 1.5rem;
   position: fixed;
-  bottom: 2rem;
-  right: 2rem;
+  bottom: var(--paddingX);
+  right: var(--paddingX);
 `

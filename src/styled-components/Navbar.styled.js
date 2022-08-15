@@ -4,16 +4,19 @@ export const NavbarStyled = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: var(--paddingY) var(--paddingX);
   position: relative;
   background-color: var(--bgColor);
   transition: background-color var(--transition);
+  @media (min-width: 768px) {
+    padding: var(--paddingYMD) var(--paddingXMD);
+  }
 `
 
 export const NavGroup = styled.div`
   display: none;
   margin: 0 1rem;
-  @media (min-width: 720px) {
+  @media (min-width: 768px) {
     display: block;
   }
   a, button {
