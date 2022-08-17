@@ -13,11 +13,16 @@ export const PageButton = styled.button`
   border: none;
   border-radius: 6px;
   color: var(--bgColor);
+  display: block;
   font-weight: 800;
   letter-spacing: 2px;
   cursor: pointer;
   transition: box-shadow var(--transition);
   :hover {
     box-shadow: 0px 0px 15px 0px #74cd7d;
+  }
+  @media (min-width: 768px) {
+    margin-left: auto;
+    margin-right: 2rem;
   }
 `;

@@ -14,8 +14,8 @@ export const PageImage = styled.picture`
   }
   div {
     display: block;
-    width: clamp(15rem, 40vw, 20rem);
-    height: 10rem;
+    width: 100%;
+    height: 100%;
     border-radius: 1rem;
     position: absolute;  
     z-index: 0;
@@ -29,5 +29,9 @@ export const PageImage = styled.picture`
     background-color: #2FB43C;
     top: 1rem;
     left: -1rem;
+  }
+  @media (min-width: 768px) {
+    max-width: 40%;
+    display: inline-flex;
   }
 `;

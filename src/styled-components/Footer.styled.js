@@ -6,7 +6,6 @@ export const FooterStyled = styled.footer`
   display: flex;
   flex-wrap: wrap;
   column-gap: 2rem;
-  margin-top: 20rem;
   h2 {
     color: var(--textColor);
   }

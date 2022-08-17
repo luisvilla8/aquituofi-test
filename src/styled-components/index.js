@@ -7,6 +7,7 @@ export * from './Modal.styled';
 export * from './Navbar.styled';
 export * from './PageButton.styled';
 export * from './PageImage.styled';
+export * from './PageLayout';
 export * from './PageText.styled';
 export * from './PageTitle.styled';
 export * from './index';
