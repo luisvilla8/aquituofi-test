@@ -4,5 +4,6 @@ export * from './Home/styled-components';
 export * from './Mision/Mision';
 export * from './Proposito/Proposito';
 export * from './Somos/Somos';
+export * from './Valores/Valores';
 export * from './Vision/Vision';
 export * from './index';
