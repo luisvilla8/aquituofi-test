@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes, NavLink } from "react-router-dom";
 import { BsWhatsapp } from "react-icons/bs";
 import { Navbar, Logo, ModalLogin, Footer } from "./components";
 import { ButtonWhatsapp, MainContainer } from "./styled-components";
-import { Home, Somos } from "./pages";
+import { Home, Somos, Proposito } from "./pages";
 function App() {
   const isOpen = useSelector((state) => state.modal.isOpen);
   const theme = useSelector((state) => state.theme.value);
@@ -19,7 +19,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/somos" element={<Somos />} />
-          <Route path="/" element={<Home />} />
+          <Route path="/proposito" element={<Proposito />} />
         </Routes>
       </MainContainer>
       <ModalLogin isOpen={isOpen} />

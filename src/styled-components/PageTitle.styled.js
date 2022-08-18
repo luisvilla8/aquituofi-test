@@ -11,6 +11,6 @@ export const PageTitle = styled.h1`
   position: relative;
   margin-bottom: 2rem;
   @media (min-width: 768px) {
-    max-width: clamp(5rem, 50vw , 25rem);
+    max-width: clamp(5rem, 50vw , 35rem);
   }
 `;

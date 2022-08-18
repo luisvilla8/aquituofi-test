@@ -15,13 +15,15 @@ export const Footer = ({ children }) => {
         <p>Todos los espacios a un click</p>
       </LinkGroup>
       <LinkGroup>
-        <li><LinkStyled to="/somos">Quienes Somos</LinkStyled></li>
-        <li><LinkStyled to="/mipanel">Mi Panel</LinkStyled></li>
         <li><Button handleClick={() => dispatch(openModal())}>Pruebame Gratis</Button></li>
+        <li><LinkStyled to="/mipanel">Mi Panel</LinkStyled></li>
+        <li><LinkStyled to="/somos">Quienes Somos</LinkStyled></li>
       </LinkGroup>
       <LinkGroup>
         <li><LinkStyled to="/vision">Visión</LinkStyled></li>
         <li><LinkStyled to="/mision">Misión</LinkStyled></li>
+        <li><LinkStyled to="/proposito">Propósito</LinkStyled></li>
+        <li><LinkStyled to="/valores">Valores</LinkStyled></li>
         <li><LinkStyled to="/equipo">Equipo</LinkStyled></li>
       </LinkGroup>
       <LinkGroup>
