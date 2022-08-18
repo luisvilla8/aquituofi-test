@@ -10,6 +10,7 @@ export const GlobalStyle = createGlobalStyle`
   html,
   body {
     background-color: var(--bgColor);
+    transition: background-color var(--transition);
   }
   a {
     text-decoration: none;
